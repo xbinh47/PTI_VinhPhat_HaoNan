@@ -42,18 +42,18 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>150</y>
-      <width>551</width>
-      <height>421</height>
+      <x>110</x>
+      <y>70</y>
+      <width>1051</width>
+      <height>571</height>
      </rect>
     </property>
     <property name="contextMenuPolicy">
-     <enum>Qt::PreventContextMenu</enum>
+     <enum>Qt::ContextMenuPolicy::PreventContextMenu</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(0,0,0,200);
-</string>
+border-radius: 20px</string>
     </property>
     <property name="text">
      <string/>
@@ -62,15 +62,15 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>150</y>
-      <width>361</width>
+      <x>430</x>
+      <y>120</y>
+      <width>411</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 99, 177);
-font: 700 22pt &quot;.VnAvant&quot;;</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 24pt &quot;Courier New&quot;;</string>
     </property>
     <property name="text">
      <string>Create an account</string>
@@ -79,27 +79,27 @@ font: 700 22pt &quot;.VnAvant&quot;;</string>
    <widget class="QLineEdit" name="txt_name">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>220</x>
       <y>220</y>
-      <width>321</width>
+      <width>831</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>antipasto</family>
-      <pointsize>15</pointsize>
+      <family>Tahoma</family>
+      <pointsize>12</pointsize>
       <italic>false</italic>
-      <bold>false</bold>
+      <bold>true</bold>
      </font>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 15pt &quot;antipasto&quot;;
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgba(0, 99, 177, 255); color:rgba(156, 194, 213, 230);
+border-bottom: 2px solid rgb(255, 255, 255); color:rgba(156, 194, 213, 230);
 padding-bottom:7px;
 </string>
     </property>
@@ -113,8 +113,8 @@ padding-bottom:7px;
    <widget class="QPushButton" name="btn_register">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>460</y>
+      <x>560</x>
+      <y>490</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -127,7 +127,7 @@ padding-bottom:7px;
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton#btn_register{
-	color: rgb(0, 99, 177);
+	color: rgb(255, 255, 255);
 	border-radius:5px;
 }
 QPushButton#btn_register:hover{
@@ -137,7 +137,7 @@ QPushButton#btn_register:pressed{
 	padding-top:5px;
 	background-color:rgba(105, 118, 132, 255);
 }
-font: 700 36pt &quot;Segoe UI&quot;;</string>
+font: 700 36pt &quot;Tahoma&quot;;</string>
     </property>
     <property name="text">
      <string>Sign up</string>
@@ -147,7 +147,7 @@ font: 700 36pt &quot;Segoe UI&quot;;</string>
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>530</y>
+      <y>570</y>
       <width>371</width>
       <height>29</height>
      </rect>
@@ -160,7 +160,7 @@ font: 700 36pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton#btn_login{
-	color: rgb(0, 99, 177);
+	color: rgb(255, 255, 255);
 	border-radius:5px;
 }
 QPushButton#btn_login:hover{
@@ -179,16 +179,16 @@ font: 700 36pt &quot;Segoe UI&quot;;</string>
    <widget class="QLineEdit" name="txt_email">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>220</x>
       <y>280</y>
-      <width>321</width>
+      <width>831</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 15pt &quot;antipasto&quot;;
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgba(0, 99, 177, 255); color:rgba(156, 194, 213, 230);
+border-bottom: 2px solid rgb(255, 255, 255); color:rgba(156, 194, 213, 230);
 padding-bottom:7px;
 </string>
     </property>
@@ -202,16 +202,16 @@ padding-bottom:7px;
    <widget class="QLineEdit" name="txt_password">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>220</x>
       <y>340</y>
-      <width>321</width>
+      <width>831</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 15pt &quot;antipasto&quot;;
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgba(0, 99, 177, 255); color:rgba(156, 194, 213, 230);
+border-bottom: 2px solid rgb(255, 255, 255); color:rgba(156, 194, 213, 230);
 padding-bottom:7px;
 </string>
     </property>
@@ -225,16 +225,16 @@ padding-bottom:7px;
    <widget class="QLineEdit" name="txt_conf_pwd">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>220</x>
       <y>410</y>
-      <width>321</width>
+      <width>831</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 15pt &quot;antipasto&quot;;
+     <string notr="true">font: 700 12pt &quot;Tahoma&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgba(0, 99, 177, 255); color:rgba(156, 194, 213, 230);
+border-bottom: 2px solid rgb(255, 255, 255); color:rgba(156, 194, 213, 230);
 padding-bottom:7px;
 </string>
     </property>
