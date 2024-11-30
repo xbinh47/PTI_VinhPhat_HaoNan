@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_4">
@@ -66,7 +66,7 @@
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgb(144,0,0); color:rgb(244,0,0);
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -100,7 +100,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgb(144,0,0); color:rgb(244,0,0);
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -134,7 +134,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgb(144,0,0); color:rgb(244,0,0);
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -171,7 +171,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgb(144,0,0); color:rgb(244,0,0);
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -205,7 +205,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgb(144,0,0); color:rgb(244,0,0);
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -233,7 +233,7 @@ padding-bottom:7px;
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton#btn_save{
-	color: rgb(144,0,0);
+	color: rgb(255,255,255);
 	border-radius:5px;
 }
 QPushButton#btn_save:hover{
@@ -308,7 +308,7 @@ font: 700 50pt &quot;Segoe UI&quot;;</string>
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-border-bottom: 2px solid rgb(144,0,0); color:rgb(144,0,0);
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -385,7 +385,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -419,7 +419,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 700 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -453,7 +453,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -487,7 +487,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -521,7 +521,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -555,7 +555,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -589,7 +589,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -617,7 +617,7 @@ padding-bottom:7px;
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton#btn_watch1{
-	color:rgb(144,0,0);
+	color: rgb(255,255,255);
 	border-radius:5px;
 }
 QPushButton#btn_watch1:hover{
@@ -782,7 +782,7 @@ border-radius:20px;</string>
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -816,7 +816,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -850,7 +850,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -1053,7 +1053,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 700 15pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -1087,7 +1087,7 @@ padding-bottom:7px;
       <property name="styleSheet">
        <string notr="true">font: 10pt &quot;antipasto&quot;;
 background-color:rgba(0, 0, 0, 0); border:none;
-color:rgb(144,0,0);
+color:rgb(255,255,255);
 padding-bottom:7px;
 </string>
       </property>
@@ -1110,7 +1110,7 @@ padding-bottom:7px;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(114,0,0)</string>
+     <string notr="true">background-color: rgb(255, 255, 255)</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
