@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_4">
@@ -255,7 +255,7 @@ font: 700 50pt &quot;Segoe UI&quot;;</string>
       </property>
       <property name="geometry">
        <rect>
-        <x>540</x>
+        <x>550</x>
         <y>20</y>
         <width>121</width>
         <height>121</height>
@@ -269,7 +269,7 @@ font: 700 50pt &quot;Segoe UI&quot;;</string>
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../user1_white_border.png</normaloff>../../user1_white_border.png</iconset>
+        <normaloff>../img/user1_white_border.png</normaloff>../img/user1_white_border.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -352,8 +352,12 @@ padding-bottom:7px;
         <x>50</x>
         <y>80</y>
         <width>301</width>
-        <height>441</height>
+        <height>431</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
       </property>
       <property name="text">
        <string/>
@@ -633,22 +637,6 @@ font: 700 50pt &quot;Segoe UI&quot;;</string>
        <string>Xem phim</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_13">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>80</y>
-        <width>318</width>
-        <height>441</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <zorder>label_5</zorder>
      <zorder>txt_name_6</zorder>
      <zorder>txt_name_7</zorder>
@@ -658,7 +646,6 @@ font: 700 50pt &quot;Segoe UI&quot;;</string>
      <zorder>txt_name_11</zorder>
      <zorder>txt_name_12</zorder>
      <zorder>btn_watch1</zorder>
-     <zorder>label_13</zorder>
      <zorder>label_9</zorder>
     </widget>
     <widget class="QWidget" name="page_5">
@@ -701,11 +688,15 @@ border-radius:20px;</string>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>20</x>
         <y>80</y>
         <width>301</width>
-        <height>441</height>
+        <height>431</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
       </property>
       <property name="text">
        <string/>
@@ -717,11 +708,18 @@ border-radius:20px;</string>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>420</x>
+        <x>410</x>
         <y>80</y>
         <width>301</width>
-        <height>441</height>
+        <height>431</height>
        </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
       </property>
       <property name="text">
        <string/>
@@ -733,11 +731,18 @@ border-radius:20px;</string>
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>800</x>
+        <x>790</x>
         <y>80</y>
         <width>301</width>
-        <height>441</height>
+        <height>431</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
       </property>
       <property name="text">
        <string/>
@@ -762,7 +767,7 @@ border-radius:20px;</string>
      <widget class="QLineEdit" name="txt_name_2">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>10</x>
         <y>520</y>
         <width>341</width>
         <height>51</height>
@@ -796,9 +801,9 @@ padding-bottom:7px;
      <widget class="QLineEdit" name="txt_name_3">
       <property name="geometry">
        <rect>
-        <x>410</x>
-        <y>520</y>
-        <width>351</width>
+        <x>380</x>
+        <y>510</y>
+        <width>431</width>
         <height>71</height>
        </rect>
       </property>
@@ -861,65 +866,14 @@ padding-bottom:7px;
        <string>Username</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>33</x>
-        <y>80</y>
-        <width>314</width>
-        <height>441</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>413</x>
-        <y>80</y>
-        <width>314</width>
-        <height>441</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>790</x>
-        <y>80</y>
-        <width>318</width>
-        <height>441</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <zorder>label_6</zorder>
      <zorder>lineEdit</zorder>
      <zorder>verticalScrollBar</zorder>
      <zorder>txt_name_2</zorder>
      <zorder>txt_name_3</zorder>
      <zorder>txt_name_4</zorder>
-     <zorder>label_10</zorder>
      <zorder>label_2</zorder>
-     <zorder>label_11</zorder>
      <zorder>label_3</zorder>
-     <zorder>label_12</zorder>
      <zorder>label_8</zorder>
     </widget>
     <widget class="QWidget" name="page">
@@ -949,7 +903,42 @@ padding-bottom:7px;
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(144, 0, 0);</string>
+       <string notr="true">/* Progress Bar */
+.progress-bar {
+  height: 6px;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Volume Bar */
+.volume-bar {
+  height: 6px;
+  background: linear-gradient(to right, #2196f3, #03a9f4);
+  border-radius: 5px;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.progress-bar:hover, .volume-bar:hover {
+  opacity: 0.9;
+}
+</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -963,6 +952,44 @@ padding-bottom:7px;
         <width>160</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Progress Bar */
+.progress-bar {
+  height: 6px;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Volume Bar */
+.volume-bar {
+  height: 6px;
+  background: linear-gradient(to right, #2196f3, #03a9f4);
+  border-radius: 5px;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.progress-bar:hover, .volume-bar:hover {
+  opacity: 0.9;
+}
+</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -978,7 +1005,10 @@ padding-bottom:7px;
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 0, 0);</string>
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="text">
        <string/>
@@ -998,7 +1028,7 @@ padding-bottom:7px;
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../img/play-button-arrowhead.png</normaloff>../img/play-button-arrowhead.png</iconset>
+        <normaloff>../img/play-button-white-on-black.png</normaloff>../img/play-button-white-on-black.png</iconset>
       </property>
       <property name="flat">
        <bool>true</bool>
@@ -1018,7 +1048,7 @@ padding-bottom:7px;
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../img/volume-up-interface-symbol.png</normaloff>../img/volume-up-interface-symbol.png</iconset>
+        <normaloff>../img/volume-up-white-on-black.png</normaloff>../img/volume-up-white-on-black.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -1069,7 +1099,7 @@ padding-bottom:7px;
        <rect>
         <x>30</x>
         <y>540</y>
-        <width>211</width>
+        <width>121</width>
         <height>71</height>
        </rect>
       </property>
