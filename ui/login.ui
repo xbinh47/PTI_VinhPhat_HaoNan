@@ -79,9 +79,9 @@ font: 700 30pt &quot;Courier New&quot;;</string>
    <widget class="QPushButton" name="btn_login">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>480</y>
-      <width>161</width>
+      <x>570</x>
+      <y>490</y>
+      <width>181</width>
       <height>61</height>
      </rect>
     </property>
@@ -112,9 +112,9 @@ font: 700 36pt &quot;Tahoma&quot;;</string>
    <widget class="QPushButton" name="btn_register">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>470</x>
       <y>550</y>
-      <width>371</width>
+      <width>381</width>
       <height>29</height>
      </rect>
     </property>
