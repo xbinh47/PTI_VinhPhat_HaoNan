@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1284</width>
+    <height>692</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>692</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1281</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>150</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_password">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>290</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_email">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>220</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Email</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_nationality">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>360</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Nationality</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_age">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>430</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Age</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_save">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>560</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_save{
+	color: rgb(255,255,255);
+	border-radius:5px;
+}
+QPushButton#btn_save:hover{
+}
+QPushButton#btn_save:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(105, 118, 132, 255);
+}
+font: 700 50pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>20</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(144,0,0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../img/user1_white_border.png</normaloff>../img/user1_white_border.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_gender">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>500</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+border-bottom: 2px solid rgb(255,255,255); color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Male</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Female</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Other</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>-50</x>
+        <y>-10</y>
+        <width>1280</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>301</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/sponge.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_6">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>80</y>
+        <width>601</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Giải Cứu Bikini Bottom: Sứ Mệnh Của Sandy Cheeks </string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>461</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Những bộ phim yêu thích của bạn</string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_8">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>160</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Trạng thái: Hoàn tất </string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_9">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>220</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Thời lượng: 82 phút </string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_10">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>280</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Độ phân giải: HD</string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_11">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>340</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Thể loại: Hoạt hình</string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_12">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>400</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Quốc gia: Âu-Mỹ</string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_watch1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>520</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_watch1{
+	color: rgb(255,255,255);
+	border-radius:5px;
+}
+QPushButton#btn_watch1:hover{
+}
+QPushButton#btn_watch1:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(105, 118, 132, 255);
+}
+font: 700 50pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Xem phim</string>
+      </property>
+     </widget>
+     <zorder>label_5</zorder>
+     <zorder>txt_name_6</zorder>
+     <zorder>txt_name_7</zorder>
+     <zorder>txt_name_8</zorder>
+     <zorder>txt_name_9</zorder>
+     <zorder>txt_name_10</zorder>
+     <zorder>txt_name_11</zorder>
+     <zorder>txt_name_12</zorder>
+     <zorder>btn_watch1</zorder>
+     <zorder>label_9</zorder>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1191</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>571</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;VNAvant&quot;;
+border-radius:20px;</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>  ⌕Search</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>301</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/meo.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>80</y>
+        <width>301</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/io2.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>80</y>
+        <width>301</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid white;
+border-radius: 5px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/kungfu.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QScrollBar" name="verticalScrollBar">
+      <property name="geometry">
+       <rect>
+        <x>1164</x>
+        <y>0</y>
+        <width>20</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>520</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Garfield: Mèo Béo Siêu Quậy </string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_3">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>510</y>
+        <width>431</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Những Mảnh Ghép Cảm Xúc 2 </string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_4">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>510</y>
+        <width>251</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Công Phu Gấu Trúc 3 </string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <zorder>label_6</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>verticalScrollBar</zorder>
+     <zorder>txt_name_2</zorder>
+     <zorder>txt_name_3</zorder>
+     <zorder>txt_name_4</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_3</zorder>
+     <zorder>label_8</zorder>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1301</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>562</y>
+        <width>991</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Progress Bar */
+.progress-bar {
+  height: 6px;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Volume Bar */
+.volume-bar {
+  height: 6px;
+  background: linear-gradient(to right, #2196f3, #03a9f4);
+  border-radius: 5px;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.progress-bar:hover, .volume-bar:hover {
+  opacity: 0.9;
+}
+</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>600</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Progress Bar */
+.progress-bar {
+  height: 6px;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Volume Bar */
+.volume-bar {
+  height: 6px;
+  background: linear-gradient(to right, #2196f3, #03a9f4);
+  border-radius: 5px;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.progress-bar:hover, .volume-bar:hover {
+  opacity: 0.9;
+}
+</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>1291</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>560</y>
+        <width>31</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../img/play-button-white-on-black.png</normaloff>../img/play-button-white-on-black.png</iconset>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>590</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../img/volume-up-white-on-black.png</normaloff>../img/volume-up-white-on-black.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>301</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>Tiêu đề phim</string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txt_name_14">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>540</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>antipasto</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgb(255,255,255);
+padding-bottom:7px;
+</string>
+      </property>
+      <property name="text">
+       <string>00:00 / 1:00:02</string>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_account">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(144,0,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../img/user1.png</normaloff>../img/user1.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>75</width>
+       <height>75</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_home">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(144,0,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../img/home1.png</normaloff>../img/home1.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_saved">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(144,0,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../img/bookmark-white.png</normaloff>../img/bookmark-white.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_watch">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>300</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(144,0,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../img/camera.png</normaloff>../img/camera.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="txt_name_5">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>770</y>
+      <width>351</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>antipasto</family>
+      <pointsize>15</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;antipasto&quot;;
+background-color:rgba(0, 0, 0, 0); border:none;
+color:rgba(0, 99, 177, 230);
+padding-bottom:7px;
+</string>
+    </property>
+    <property name="text">
+     <string>Những Mảnh Ghép Cảm Xúc 2 </string>
+    </property>
+    <property name="placeholderText">
+     <string>Username</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

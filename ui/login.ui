@@ -26,6 +26,9 @@
       <height>720</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
      <string notr="true">border-radius:20px;</string>
     </property>
@@ -47,6 +50,9 @@
       <width>1051</width>
       <height>591</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(0,0,0,200);
@@ -184,8 +190,39 @@ padding-bottom:7px;
     <property name="text">
      <string/>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
     <property name="placeholderText">
      <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eye_p">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>340</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
     </property>
    </widget>
   </widget>

@@ -1,5 +1,6 @@
 from PyQt6 import QtWidgets, QtCore
 from PyQt6.QtWidgets import QApplication, QMessageBox, QLineEdit, QPushButton, QMessageBox, QMainWindow, QStackedWidget, QComboBox
+from PyQt6.QtGui import QIcon
 from PyQt6 import uic
 import sys
 import csv
@@ -29,10 +30,20 @@ class Login(QMainWindow):
         self.password = self.findChild(QLineEdit, "txt_password")
         self.btn_login = self.findChild(QPushButton, "btn_login")
         self.btn_register = self.findChild(QPushButton, "btn_register")
+        self.btn_eye_p = self.findChild(QPushButton, "btn_eye_p")
         
         self.btn_login.clicked.connect(self.login)
         self.btn_register.clicked.connect(self.show_register)
+        self.btn_eye_p.clicked.connect(lambda: self.hiddenOrShow(self.password, self.btn_eye_p))
         
+    def hiddenOrShow(self, input:QLineEdit, button:QPushButton):
+        if input.echoMode() == QLineEdit.EchoMode.Password:
+            input.setEchoMode(QLineEdit.EchoMode.Normal)
+            button.setIcon(QIcon("img/eye-solid.svg"))
+        else:
+            input.setEchoMode(QLineEdit.EchoMode.Password)
+            button.setIcon(QIcon("img/eye-slash-solid.svg"))
+
     def login(self):
         msg = MessageBox()
         email = self.email.text()
@@ -51,13 +62,13 @@ class Login(QMainWindow):
         user = get_user_by_email_and_password(email, password)        
         if user is not None:
             msg.success_box("Đăng nhập thành công")
-            self.show_home(email)
+            self.show_home(user["id"])
             return
         
         msg.error_box("Email hoặc mật khẩu không đúng")
     
-    def show_home(self, email):
-        self.home = Home(email)
+    def show_home(self, user_id):
+        self.home = Home(user_id)
         self.home.show()
         self.close()   
          
@@ -77,9 +88,21 @@ class Register(QMainWindow):
         self.confirm_password = self.findChild(QLineEdit, "txt_conf_pwd")
         self.btn_register = self.findChild(QPushButton, "btn_register")
         self.btn_login = self.findChild(QPushButton, "btn_login")
+        self.btn_eye_p = self.findChild(QPushButton, "btn_eye_p")
+        self.btn_eye_cp = self.findChild(QPushButton, "btn_eye_cp")
         
         self.btn_register.clicked.connect(self.register)
         self.btn_login.clicked.connect(self.show_login)
+        self.btn_eye_p.clicked.connect(lambda: self.hiddenOrShow(self.password, self.btn_eye_p))
+        self.btn_eye_cp.clicked.connect(lambda: self.hiddenOrShow(self.confirm_password, self.btn_eye_cp))
+        
+    def hiddenOrShow(self, input:QLineEdit, button:QPushButton):
+        if input.echoMode() == QLineEdit.EchoMode.Password:
+            input.setEchoMode(QLineEdit.EchoMode.Normal)
+            button.setIcon(QIcon("img/eye-solid.svg"))
+        else:
+            input.setEchoMode(QLineEdit.EchoMode.Password)
+            button.setIcon(QIcon("img/eye-slash-solid.svg"))
         
     def register(self):
         msg = MessageBox()
@@ -140,11 +163,11 @@ class Register(QMainWindow):
         self.close()
         
 class Home(QMainWindow):
-    def __init__(self, email):
+    def __init__(self, user_id):
         super().__init__()
         uic.loadUi("ui/item.ui", self)
         
-        self.email = email
+        self.user_id = user_id
         self.stackWidget = self.findChild(QStackedWidget, "stackedWidget")
         self.accountBtn = self.findChild(QPushButton, "btn_account")
         self.watchBtn = self.findChild(QPushButton, "btn_watch")
@@ -172,22 +195,16 @@ class Home(QMainWindow):
     def renderAccountScreen(self):
         self.txt_name = self.findChild(QLineEdit, "txt_name")
         self.txt_email = self.findChild(QLineEdit, "txt_email")
-        self.txt_password = self.findChild(QLineEdit, "txt_password")
         self.txt_nationality = self.findChild(QLineEdit, "txt_nationality")
         self.txt_age = self.findChild(QLineEdit, "txt_age")
         self.cb_gender = self.findChild(QComboBox, "cb_gender")
 
-        data = []
-        with open("data/users.csv", "r") as file:
-            reader = csv.DictReader(file)
-            data = list(reader)
-        for row in data:
-            if row["Email"] == self.email:
-                self.txt_name.setText(row["Name"])
-                self.txt_email.setText(row["Email"])
-                self.txt_password.setText(row["Password"])
-                self.txt_nationality.setText(row["Nationality"])
-                self.txt_age.setText(row["Age"])
+        user = get_user_by_id(self.user_id)
+        print(user)
+        self.txt_name.setText(user["name"])
+        self.txt_email.setText(user["email"])
+        self.txt_nationality.setText(user["nationality"])
+        self.txt_age.setText(user["age"])
         
 if __name__ == "__main__":
     app = QApplication(sys.argv)

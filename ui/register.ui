@@ -18,6 +18,14 @@
     <property name="enabled">
      <bool>true</bool>
     </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -207,6 +215,9 @@ padding-bottom:7px;
     <property name="text">
      <string/>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
     <property name="placeholderText">
      <string>Password</string>
     </property>
@@ -230,8 +241,61 @@ padding-bottom:7px;
     <property name="text">
      <string/>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
     <property name="placeholderText">
      <string>Confirm password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eye_p">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>350</y>
+      <width>83</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eye_cp">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>420</y>
+      <width>83</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
     </property>
    </widget>
   </widget>
