@@ -1,6 +1,6 @@
 from PyQt6 import QtWidgets, QtCore
-from PyQt6.QtWidgets import QApplication, QMessageBox, QLineEdit, QPushButton, QMessageBox, QMainWindow, QStackedWidget, QComboBox
-from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import QApplication, QMessageBox, QLineEdit, QPushButton, QMessageBox, QMainWindow, QStackedWidget, QComboBox, QFileDialog
+from PyQt6.QtGui import QIcon, QPixmap, QIcon
 from PyQt6 import uic
 import sys
 import csv
@@ -173,12 +173,16 @@ class Home(QMainWindow):
         self.watchBtn = self.findChild(QPushButton, "btn_watch")
         self.homeBtn = self.findChild(QPushButton, "btn_home")
         self.savedBtn = self.findChild(QPushButton, "btn_saved")
+        self.saveBtn = self.findChild(QPushButton, "btn_save")
+        self.avatar_btn = self.findChild(QPushButton, "avatar_btn")
         self.accountBtn.clicked.connect(self.navigateAccountScreen)
         self.homeBtn.clicked.connect(self.navigateHomeScreen)
         self.savedBtn.clicked.connect(self.navigateSavedScreen)
         self.watchBtn.clicked.connect(self.navigateWatchScreen)
         self.stackWidget.setCurrentIndex(2)
         self.renderAccountScreen()
+        self.saveBtn.clicked.connect(self.changeAccountInfo)
+        self.avatar_btn.clicked.connect(self.loadAvatarFromFile)
         
     def navigateAccountScreen(self):
         self.stackWidget.setCurrentIndex(0)
@@ -198,14 +202,46 @@ class Home(QMainWindow):
         self.txt_nationality = self.findChild(QLineEdit, "txt_nationality")
         self.txt_age = self.findChild(QLineEdit, "txt_age")
         self.cb_gender = self.findChild(QComboBox, "cb_gender")
+        self.avatar_btn = self.findChild(QPushButton, "avatar_btn")
 
-        user = get_user_by_id(self.user_id)
-        print(user)
-        self.txt_name.setText(user["name"])
-        self.txt_email.setText(user["email"])
-        self.txt_nationality.setText(user["nationality"])
-        self.txt_age.setText(user["age"])
+        self.user = get_user_by_id(self.user_id)
+        self.txt_name.setText(self.user["name"])
+        self.txt_email.setText(self.user["email"])
+        self.txt_nationality.setText(self.user["nationality"])
+        self.txt_age.setText(str(self.user["age"]))
+        if self.user["gender"] == "Male":
+            self.cb_gender.setCurrentIndex(0)
+        elif self.user["gender"] == "Female":
+            self.cb_gender.setCurrentIndex(1) 
+        else:
+            self.cb_gender.setCurrentIndex(2)
+        if self.user["avatar"] != "":
+            self.avatar_btn.setIcon(QIcon(self.user["avatar"]))
+    
+    def changeAccountInfo(self):
+        name = self.txt_name.text()
+        email = self.txt_email.text()
+        nationality = self.txt_nationality.text()
+        age = self.txt_age.text()
+        if self.cb_gender.currentIndex() == 0:
+            gender = "Male"
+        elif self.cb_gender.currentIndex() == 1:
+            gender = "Female"
+        else:
+            gender = "Other"
+        avatar = self.user["avatar"]
+        u = User(name, email, "", nationality, age, gender, avatar)
+        print(u)
         
+        update_user(self.user_id, u)
+        self.renderAccountScreen()
+
+    def loadAvatarFromFile(self):
+        file, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Select Image", "", "Image Files (*.png *.jpg *jpeg *.bmp)")
+        if file:
+            self.user["avatar"] = file
+            self.avatar_btn.setIcon(QIcon(file))
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Login()

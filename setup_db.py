@@ -50,7 +50,7 @@ def get_user_by_id(id):
 def update_user(id, user: User):
     conn = sqlite3.connect('data/database.db')
     c = conn.cursor()
-    query = f"UPDATE user SET name = '{user.name}', email = '{user.email}', password = '{user.password}', nationality = '{user.nationality}', age = '{user.age}', gender = '{user.gender}', avatar = '{user.avatar}' WHERE id = '{id}'"
+    query = f"UPDATE user SET name = '{user.name}', email = '{user.email}', nationality = '{user.nationality}', age = '{user.age}', gender = '{user.gender}', avatar = '{user.avatar}' WHERE id = '{id}'"
     c.execute(query)
     conn.commit()
     conn.close()
