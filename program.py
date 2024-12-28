@@ -9,6 +9,7 @@ import sys
 import csv
 from setup_db import *
 
+os_type = "windows"
 class MessageBox():
     def success_box(self, message):
         box = QMessageBox()
@@ -178,7 +179,10 @@ class MovieItemWidget(QWidget):
         self.btn_detail = self.findChild(QPushButton, 'btn_detail')
         self.lbl_image = self.findChild(QLabel, 'lbl_image')
         self.lbl_name.setText(name)
-        self.lbl_image.setPixmap(QPixmap(image_path.replace("/", "\\")))
+        if os_type == "windows":
+            self.lbl_image.setPixmap(QPixmap(image_path.replace("/", "\\")))
+        else:
+            self.lbl_image.setPixmap(QPixmap(image_path))
         self.btn_detail.clicked.connect(self.handle_detail_movie)
         
         self.setMinimumSize(300, 550)
@@ -356,7 +360,10 @@ class Home(QMainWindow):
         self.lbl_type.setText(f"Type: {movie['type']}")
         self.lbl_country.setText(f"Country: {movie['country']}")
         self.lbl_release_date.setText(f"Release Date: {movie['release_date']}")
-        self.lbl_image.setPixmap(QPixmap(movie["image_path"].replace("/", "\\")))
+        if os_type == "windows":
+            self.lbl_image.setPixmap(QPixmap(movie["image_path"].replace("/", "\\")))
+        else:
+            self.lbl_image.setPixmap(QPixmap(movie["image_path"]))
         
         # Fix the description formatting
         description = movie["description"]
@@ -370,7 +377,10 @@ class Home(QMainWindow):
             return
         try:
             movie = get_movie_by_id(self.movie_id)
-            self.mediaPlayer.setSource(QUrl.fromLocalFile(movie["file_path"].replace("/", "\\")))
+            if os_type == "windows":
+                self.mediaPlayer.setSource(QUrl.fromLocalFile(movie["file_path"].replace("/", "\\")))
+            else:
+                self.mediaPlayer.setSource(QUrl.fromLocalFile(movie["file_path"]))
             self.mediaPlayer.play()
             
             self.durationBar.sliderMoved.connect(self.setPosition)
