@@ -56,3 +56,32 @@ def update_user(id, user: User):
     conn.close()
 
 
+def get_all_movies():
+    conn = sqlite3.connect('data/database.db')
+    c = conn.cursor()
+    c.row_factory = dict_factory
+    query = f"SELECT id,name,duration,type,country,description,file_path,image_path,release_date FROM movie"
+    c.execute(query)
+    result = c.fetchall()
+    conn.close()
+    return result
+
+def get_movie_by_id(id):
+    conn = sqlite3.connect('data/database.db')
+    c = conn.cursor()
+    c.row_factory = dict_factory
+    query = f"SELECT id,name,duration,type,country,description,file_path,image_path,release_date FROM movie WHERE id = '{id}'"
+    c.execute(query)
+    result = c.fetchone()
+    conn.close()
+    return result
+
+def get_movie_by_name(name):
+    conn = sqlite3.connect('data/database.db')
+    c = conn.cursor()
+    c.row_factory = dict_factory
+    query = f"SELECT id,name,duration,type,country,description,file_path,image_path,release_date FROM movie WHERE LOWER(name) LIKE '%{name.lower()}%'"
+    c.execute(query)
+    result = c.fetchall()
+    conn.close()
+    return result
