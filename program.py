@@ -215,7 +215,7 @@ class Home(QMainWindow):
         self.movieList.setWidgetResizable(True)
         
         # media player
-        self.lbl_title = self.findChild(QLabel, 'lbl_title')
+        self.lbl_title = self.findChild(QLabel, 'videoName')
         self.volumeBtn = self.findChild(QPushButton, 'volumeBtn')
         self.timeLabel = self.findChild(QLabel, 'timeLabel')
         self.durationBar = self.findChild(QSlider, 'durationBar')
