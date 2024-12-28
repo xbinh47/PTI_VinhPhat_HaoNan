@@ -386,14 +386,14 @@ class Ui_MainWindow(object):
 "padding-bottom:7px;\n"
 "")
         self.timeLabel.setObjectName("timeLabel")
-        self.label_2 = QtWidgets.QLabel(parent=self.page)
-        self.label_2.setGeometry(QtCore.QRect(30, 10, 331, 31))
-        self.label_2.setStyleSheet("font: 700 15pt \"antipasto\";\n"
+        self.lbl_title = QtWidgets.QLabel(parent=self.page)
+        self.lbl_title.setGeometry(QtCore.QRect(30, 10, 331, 31))
+        self.lbl_title.setStyleSheet("font: 700 15pt \"antipasto\";\n"
 "background-color:rgba(0, 0, 0, 0); border:none;\n"
 "color:rgb(255,255,255);\n"
 "padding-bottom:7px;\n"
 "")
-        self.label_2.setObjectName("label_2")
+        self.lbl_title.setObjectName("lbl_title")
         self.stackedWidget.addWidget(self.page)
         self.frame_4 = QtWidgets.QFrame(parent=self.centralwidget)
         self.frame_4.setGeometry(QtCore.QRect(0, 0, 101, 701))
@@ -479,7 +479,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -503,6 +503,6 @@ class Ui_MainWindow(object):
         self.lbl_detail_description.setText(_translate("MainWindow", "Mô tả:"))
         self.search_bar.setPlaceholderText(_translate("MainWindow", "  ⌕Search"))
         self.timeLabel.setText(_translate("MainWindow", "00:00:00 00:00:00"))
-        self.label_2.setText(_translate("MainWindow", "Tiêu đề phim"))
+        self.lbl_title.setText(_translate("MainWindow", "Tiêu đề phim"))
         self.txt_name_5.setText(_translate("MainWindow", "Những Mảnh Ghép Cảm Xúc 2 "))
         self.txt_name_5.setPlaceholderText(_translate("MainWindow", "Username"))

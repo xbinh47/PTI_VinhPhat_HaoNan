@@ -9,7 +9,6 @@ import sys
 import csv
 from setup_db import *
 
-os_type = "windows"
 class MessageBox():
     def success_box(self, message):
         box = QMessageBox()
@@ -179,10 +178,7 @@ class MovieItemWidget(QWidget):
         self.btn_detail = self.findChild(QPushButton, 'btn_detail')
         self.lbl_image = self.findChild(QLabel, 'lbl_image')
         self.lbl_name.setText(name)
-        if os_type == "windows":
-            self.lbl_image.setPixmap(QPixmap(image_path.replace("/", "\\")))
-        else:
-            self.lbl_image.setPixmap(QPixmap(image_path))
+        self.lbl_image.setPixmap(QPixmap(image_path))
         self.btn_detail.clicked.connect(self.handle_detail_movie)
         
         self.setMinimumSize(300, 550)
@@ -219,6 +215,7 @@ class Home(QMainWindow):
         self.movieList.setWidgetResizable(True)
         
         # media player
+        self.lbl_title = self.findChild(QLabel, 'lbl_title')
         self.volumeBtn = self.findChild(QPushButton, 'volumeBtn')
         self.timeLabel = self.findChild(QLabel, 'timeLabel')
         self.durationBar = self.findChild(QSlider, 'durationBar')
@@ -231,7 +228,6 @@ class Home(QMainWindow):
         self.volumeLowIcon = QIcon("img/volume-low-solid.svg")
         self.volumeOffIcon = QIcon("img/volume-off-solid.svg")
         self.btn_play_video = self.findChild(QPushButton, 'btn_play_video')
-
         self.playBtn.setIcon(self.playIcon)
         self.volumeBtn.setIcon(self.volumeHighIcon)
         # Ensure volume bar range is set from 0 to 100
@@ -360,10 +356,7 @@ class Home(QMainWindow):
         self.lbl_type.setText(f"Type: {movie['type']}")
         self.lbl_country.setText(f"Country: {movie['country']}")
         self.lbl_release_date.setText(f"Release Date: {movie['release_date']}")
-        if os_type == "windows":
-            self.lbl_image.setPixmap(QPixmap(movie["image_path"].replace("/", "\\")))
-        else:
-            self.lbl_image.setPixmap(QPixmap(movie["image_path"]))
+        self.lbl_image.setPixmap(QPixmap(movie["image_path"]))
         
         # Fix the description formatting
         description = movie["description"]
@@ -377,12 +370,9 @@ class Home(QMainWindow):
             return
         try:
             movie = get_movie_by_id(self.movie_id)
-            if os_type == "windows":
-                self.mediaPlayer.setSource(QUrl.fromLocalFile(movie["file_path"].replace("/", "\\")))
-            else:
-                self.mediaPlayer.setSource(QUrl.fromLocalFile(movie["file_path"]))
+            self.mediaPlayer.setSource(QUrl.fromLocalFile(movie["file_path"]))
             self.mediaPlayer.play()
-            
+            self.lbl_title.setText(movie["name"])
             self.durationBar.sliderMoved.connect(self.setPosition)
             self.volumeBar.sliderMoved.connect(self.setVolume)
             self.mediaPlayer.playbackStateChanged.connect(self.mediaStateChanged)

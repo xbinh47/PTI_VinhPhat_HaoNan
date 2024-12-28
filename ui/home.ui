@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_4">
@@ -801,7 +801,7 @@ padding-bottom:7px;
        <string>00:00:00 00:00:00</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="lbl_title">
       <property name="geometry">
        <rect>
         <x>30</x>
